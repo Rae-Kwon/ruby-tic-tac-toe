@@ -17,6 +17,7 @@ class Player
 
   def player_input
     players_turn
+    puts 'Please input coordinates A-C 1-3 (ex. A2)'
     input = gets
     puts "Player #{@player} selected #{input.chomp}"
   end
