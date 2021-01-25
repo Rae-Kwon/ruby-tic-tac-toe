@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Visual of tic-tac-toe gameboard in ASCII
 #
 # ___|___|___

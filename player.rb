@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Player class for player inputs
 # player variable must be a number, usually 1 and 2
 class Player
@@ -19,4 +21,3 @@ class Player
     puts "Player #{@player} selected #{input.chomp}"
   end
 end
-
