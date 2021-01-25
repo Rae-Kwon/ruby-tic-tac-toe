@@ -4,11 +4,6 @@
 # ___|___|___
 #    |   |
 
-# Board should be 2D array
-# [[A1, A2, A3],
-# [B1, B2, B3],
-# [C1, C2, C3]]
-
 # Creates the game board for tic-tac-toe
 class Board
   def initialize(board_size)
