@@ -19,7 +19,11 @@ class Player
     players_turn
     puts 'Please input coordinates A-C 1-3 (ex. A2)'
     input = gets
-    puts "Player #{@player} selected #{input.chomp}"
+    if input == (1..9)
+      puts "Player #{@player} selected #{input.chomp}"
+    else
+      puts "Player #{@player} selected invalid input #{input.chomp}. Please select from numbers 1 to 9"
+    end
     input.chomp.to_i
   end
 
