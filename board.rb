@@ -8,9 +8,17 @@
 
 # Creates the game board for tic-tac-toe
 class Board
-  def create_board
-    { 'A' => { 1 => '___|', 2 => '___|', 3 => '___' },
-      'B' => { 1 => '___|', 2 => '___|', 3 => '___' },
-      'C' => { 1 => '   |', 2 => '   |', 3 => '   ' } }
+  def initialize(positions)
+    @pos = positions
+  end
+
+  def board
+    puts <<~SQUIGGLY_HEREDOC
+          #{@pos[1]}  |   #{@pos[2]}  |   #{@pos[3]}
+      -------|------|-------
+          #{@pos[4]}  |   #{@pos[5]}  |   #{@pos[6]}
+      -------|------|-------
+          #{@pos[7]}  |   #{@pos[8]}  |   #{@pos[9]}
+    SQUIGGLY_HEREDOC
   end
 end
