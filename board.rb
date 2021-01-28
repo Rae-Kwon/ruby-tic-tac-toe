@@ -12,7 +12,7 @@ class Board
     @pos = positions
   end
 
-  def board
+  def render_board
     puts <<~SQUIGGLY_HEREDOC
           #{@pos[1]}  |   #{@pos[2]}  |   #{@pos[3]}
       -------|------|-------
