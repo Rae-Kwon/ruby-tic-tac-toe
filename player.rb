@@ -20,5 +20,17 @@ class Player
     puts 'Please input coordinates A-C 1-3 (ex. A2)'
     input = gets
     puts "Player #{@player} selected #{input.chomp}"
+    input.chomp.to_i
+  end
+
+  def icon
+    case @player
+    when 1
+      'X'
+    when 2
+      'O'
+    else
+      ''
+    end
   end
 end
